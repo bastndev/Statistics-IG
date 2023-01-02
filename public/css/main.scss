@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900');
+$font: 'Source Sans Pro', sans-serif;
+
+$light: #DFE3EA;
+$white: #FFFFFF;
+$yellow: #FCEEB5;
+$green: #A2CCB6;
+$peach: #EE786E;
+$dark: #5E6063;
+
+html {
+  display: grid;
+  min-height: 100%;
+  font-family: $font;
+}
+
+body {
+  display: grid;
+  background: linear-gradient(to top right, rgba($green, 0.5), rgba($yellow, 0.5), rgba($peach, 0.5));
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  background: $green;
+  opacity: .9;
+  width: 350px;
+  height: 450px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px rgba($dark, 0.5);
+}
+
+h1 {
+  color: $white;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 900;
+  margin: 0;
+  transition: all .3s;
+  &:hover {
+    transform: scale(1.2);
+    transition: all .3s;
+    a {
+      color: $yellow;
+    }
+  }
+}
+h2 {
+  font-size: 1em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: darken($green, 25%);
+  text-align: center;
+  margin: 0;
+}
+
+h3 {
+  color: $white;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 900;
+  margin: 0;
+  margin-bottom: -8px;
+  transition: all .3s;
+}
+
+p {
+  color: $dark;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: $white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+
+.usernamelink {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 5px;
+  color: darken($green, 25%);
+  font-size: 1em;
+  &:hover {
+    color: $yellow;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    font-size: 1.1em;
+  }
+}
+
+#analytics {
+  padding-top: 10px;
+  width: 100%;
+  height: 40%;
+  background: $green;
+}
+
+
+
+.username {
+  background: $green;
+  width: 100%;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  margin: 0;
+  padding: 7px;
+  text-align: right;
+}
+
+.followers {
+  width: 100%;
+  height: 20%;
+  margin-top: 17%;
+  margin-bottom: 5%;
+}
+
+ul {
+  position: absolute;
+  top: 58%;
+  left: 5px;
+  magin: 0; 
+  padding: 0;
+}
+
+
+li {
+  display: inline-block;
+  padding-right: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: $white;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+.insights {
+  position: absolute;
+  width: 100%;
+  height: 23%;
+  bottom: 7%;
+  background: darken($yellow, 5%);
+}
+
+.insight-left {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  top: 12%;
+}
+.insight-right{
+  position: absolute;
+  right: 0;
+  width: 50%;
+  top: 12%;
+}
+
+.instagram {
+  background: lighten($peach, 8%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  padding-top: 5px;
+}
+
+
+.harvey {
+  margin: 0;
+  font-weight: 100;
+  font-size: 13px;
+  color: $white;
+  letter-spacing: 3px;
+  margin-top: 12px;
+  text-transform: uppercase;
+  a {
+    text-decoration: none;
+    border: 1px solid $white;
+    padding: 3px;
+    &:hover {
+      background: $white;
+      color: $peach;
+    }
+  }
+}
